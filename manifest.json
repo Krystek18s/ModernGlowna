@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "ModernGlowna",
+    "description": "A modern restyle to Isobczak Glowna",
+    "version": "0.45",
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": "popup/sobol.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://isobczak.zsl.gda.pl/*"],
+          "js": ["glowna/glowna.js"],
+          "css" : ["glowna/glowna.css"]
+        }
+      ],
+    "web_accessible_resources": [
+      {
+        "resources": ["icons/pdf.svg", "icons/folder.svg", "icons/parentdirectory.svg", "icons/txt.svg", "icons/exe.svg", "icons/iso.svg", "icons/unknown.svg", "icons/zip.svg", "icons/7z.svg", "icons/rar.svg", "icons/sql.svg", "popup/sobol.png"],
+        "matches": ["https://isobczak.zsl.gda.pl/*"]
+      }
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": [
+        "storage",
+        "tabs"
+    ]
+}

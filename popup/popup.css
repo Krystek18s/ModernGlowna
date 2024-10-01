@@ -1,0 +1,103 @@
+:root {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --background-color: #202030;
+    --header-color: #000000;
+    --card-color: #394a61;
+    --text-color: #f3f3f3;
+    --icon-bg-color: slategray;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--header-color);
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    img {
+        border-radius: 0.25rem;
+    }
+}
+
+a, button {
+    color: white;
+    text-decoration: none;
+    background-color: var(--card-color);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+a {
+    margin-top: 0.5rem;
+    font-size: 1.05rem;
+}
+
+main {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-content: center;
+    width: 100%;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    input {
+        margin: 0;
+        cursor: pointer;
+    }
+}
+
+#options {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    flex-direction: column;
+    padding: 0.25rem;
+    /* padding-bottom: 0.75rem; */
+    border: var(--card-color) 2px solid;
+    border-radius: 0.25rem;
+}
+
+h3 {
+    margin: 0;
+}
+
+hr {
+    width: 100%;
+    background-color: var(--card-color);
+    border: var(--card-color) 1px solid;
+}
+
+#sobolimg {
+    cursor: pointer;
+}

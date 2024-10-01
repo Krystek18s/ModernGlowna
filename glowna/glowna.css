@@ -1,0 +1,97 @@
+:root {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --background-color: #202030;
+    --header-color: #000000;
+    /* --header-color: radial-gradient(circle, #587192 0%, #293546 100%); */
+    --card-color: #394a61;
+    --text-color: #f3f3f3;
+    --icon-bg-color: slategray;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    background: var(--header-color);
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h2 {
+    margin: 0;
+    font-size: medium;
+    word-break: break-all;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.info {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    gap: 0.25rem;
+}
+
+.moreinfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.moreinfo > p {
+    margin: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+    padding: 0.5rem;
+    background-color: var(--card-color);
+    width: 16rem;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(22, 22, 29, 1);
+}
+
+section:hover {
+    transform: scale(105%);
+    transition: 0.2s;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    background-color: var(--icon-bg-color);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+.icon > img {
+    height: 6rem;
+}
+
+main {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: start;
+}
+
