@@ -2,11 +2,11 @@
 
 A modern restyle to Isobczak Glowna.
 
-## 🚀 About
+## 🎯 About
 
 **ModernGlowna** is a Chrome extension that changes the design of the Isobczak Glowna website into a one that's more modern.
 
-## 🎯 Getting Started
+## 🚀 Getting Started
 
 ### Dependencies
 
